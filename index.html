@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Contact Us</h1>
+        </div>
+
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="firstName">Имя</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Введите ваше имя">
+                    <div class="error" id="firstNameError">Заполните поле(не используйте `@#$%&*()_+= )</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Фамилия</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Введите вашу фамилию">
+                    <div class="error" id="lastNameError">Заполните поле(не используйте `@#$%&*()_+= )</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Почта</label>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email">
+                    <div class="error" id="emailRequiredError">Заполните поле</div>
+                </div>
+
+                <div class="form-group">
+                    <label>Тип</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="general" name="queryType" value="general">
+                            <label for="general">Общий вопрос</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="support" name="queryType" value="support">
+                            <label for="support">Техническая поддержка</label>
+                        </div>
+                    </div>
+                    <div class="error" id="queryTypeError">Выберите тип запроса</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Введите ваше сообщение"></textarea>
+                    <div class="error" id="messageError">Заполните поле</div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="consent" name="consent">
+                        <label for="consent">Я подтверждаю права</label>
+                    </div>
+                    <div class="error" id="consentError">Примите соглашение</div>
+                </div>
+
+                <button type="submit">Отправить</button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                <h2>Данные отправлены</h2>
+                <p class="data">Thanks for completing the form. We'll be in touch soon!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
