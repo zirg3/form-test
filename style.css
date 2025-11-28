@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	background-color: #f0f9f0;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 600px;
+	width: 100%;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.header {
+	background-color: #90ee90;
+	color: #2d5a2d;
+	padding: 25px 30px;
+	text-align: center;
+}
+
+.header h1 {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.form-container {
+	padding: 30px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 500;
+	color: #333;
+}
+
+.radio-option label {
+	margin-bottom: 0;
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	outline: none;
+	border-color: #90ee90;
+	box-shadow: 0 0 0 2px rgba(144, 238, 144, 0.3);
+}
+
+.error {
+	color: #e74c3c;
+	font-size: 14px;
+	margin-top: 5px;
+	display: none;
+}
+
+.radio-group {
+	display: flex;
+	gap: 20px;
+	margin-top: 8px;
+}
+
+.radio-option {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.radio-option input {
+	width: auto;
+}
+
+.checkbox-group {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 8px;
+}
+
+.checkbox-group input {
+	width: auto;
+	margin-top: 3px;
+}
+
+.checkbox-group label {
+	margin-bottom: 0;
+}
+
+button {
+	background-color: #90ee90;
+	color: #2d5a2d;
+	border: none;
+	padding: 14px 25px;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 6px;
+	cursor: pointer;
+	width: 100%;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #7cd87c;
+}
+
+.success-message {
+	display: none;
+	text-align: center;
+	padding: 40px 30px;
+	background-color: #f0f9f0;
+	border-radius: 8px;
+	margin-top: 20px;
+}
+
+.success-message h2 {
+	color: #2d5a2d;
+	margin-bottom: 15px;
+}
+
+.success-message p {
+	color: #4a7c4a;
+}
+
+.attribution {
+	text-align: center;
+	margin-top: 30px;
+	color: #777;
+	font-size: 14px;
+}
+
+.attribution a {
+	color: #90ee90;
+	text-decoration: none;
+}
+
+.attribution a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+	.radio-group {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.form-container {
+		padding: 20px;
+	}
+}
